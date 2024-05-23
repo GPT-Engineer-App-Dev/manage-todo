@@ -3,7 +3,11 @@ import { Container, VStack, HStack, Input, Button, IconButton, Text, Checkbox, B
 import { FaTrash } from "react-icons/fa";
 
 const Index = () => {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([
+    { text: "Buy groceries", completed: false },
+    { text: "Walk the dog", completed: true },
+    { text: "Read a book", completed: false },
+  ]);
   const [newTask, setNewTask] = useState("");
 
   const addTask = () => {
